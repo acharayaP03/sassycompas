@@ -1,5 +1,11 @@
-$mycolor: #f5f5f5;
+@import "compass";
+@import "compass/reset";
+@import "susy";
 
-body{
-	background-color: $mycolor;
-}
+/*importing partials files */
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";

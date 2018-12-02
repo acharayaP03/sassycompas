@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 .tmp
+textsnippets.md
 package-lock.json
 *.sass-cache
 builds/**/images/*
