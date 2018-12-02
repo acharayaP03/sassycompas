@@ -1,0 +1,73 @@
+//susy setup -------------------------------------------
+$total-column: 12;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+@include border-box-sizing;
+//media breakpoints
+$small: 30em;
+$medium: 47em;
+$large: 75em;
+//layout -------------------------------------------
+//content----------------
+.layout {
+    @include container;
+    padding: 3%;
+    .primary {
+        margin-top: .2em;
+        @include at-breakpoint ($medium) {
+            @include span-clolums(8, 12);
+            #nextmeeting {
+                @include border-radius(20px);
+                color: $paleryellow;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                background: $cyan;
+                h1 {
+                    color: darken($color: $cyan, $amount: 15);
+                    border: none;
+                    text-shadow: none;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+//header -------------------------------------------
+header {
+    img {
+        width: 95%;
+        margin: 2.5%;
+        max-width: 500px;
+        margin-bottom: 0;
+    }
+}
+
+//navigation -------------------------------------------
+.navigation {
+    background: lighten($color: $darkblue, $amount: 15%);
+    ul.nav {
+        li {
+            i {
+                color: lighten($color: $yellow, $amount: 20);
+                padding-right: .5rem;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 5px 5px;
+                color: $paleryellow;
+            }
+        }
+    }
+}
+
+//footer -------------------------------------------
+footer {
+    color: $paleryellow;
+    background: lighten($darkblue, 3);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
