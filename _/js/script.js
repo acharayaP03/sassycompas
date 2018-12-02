@@ -1,0 +1,1 @@
+function other(e){return e}function sayHello(){return"hello"}other("this is the other file");
